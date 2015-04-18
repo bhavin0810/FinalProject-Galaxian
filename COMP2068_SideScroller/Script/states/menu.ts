@@ -41,14 +41,24 @@ module states {
             // Add space to game
             this.space = new objects.Space();
             this.game.addChild(this.space);
-
+            /*
             //Add game name to game
             var galaxian: objects.Label = new objects.Label("GALAXIAN", constants.SCREEN_CENTER_WIDTH, 100);
             galaxian.font = "80px Consolas";
             galaxian.regX = galaxian.getMeasuredWidth() * 0.5;
             galaxian.regY = galaxian.getMeasuredHeight() * 0.5;
             this.game.addChild(galaxian);
+            */
+            var galaxian: createjs.Bitmap = new createjs.Bitmap(assetLoader.getResult("galaxianLogo"));
+            //Set the height and width of te GAME OBJECT           
+            //console.log(this.width.toString());
+            galaxian.regX = galaxian.getBounds().width * 0.5;
+            galaxian.regY = galaxian.getBounds().height * 0.5;
 
+            galaxian.x = constants.SCREEN_CENTER_WIDTH;
+            galaxian.y = 100;
+
+            this.game.addChild(galaxian);
             //Add Play Button to Game
             this.playButton = new objects.Button("playButton", constants.SCREEN_CENTER_WIDTH - 200 , 400);
             this.game.addChild(this.playButton);

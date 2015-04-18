@@ -19,7 +19,7 @@ var objects;
             game.addChild(this._livesLabel);
             //Create Label of the Score
             this._scoreLabel = new createjs.Text("SCORE: ", constants.FONT_SIZE + " " + constants.FONT_FAMILY, constants.FONT_COLOUR);
-            this._scoreLabel.x = 350;
+            this._scoreLabel.y = 35;
             game.addChild(this._scoreLabel);
         } //end of constructor
         //PUBLIC METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++++

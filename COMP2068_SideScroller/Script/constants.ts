@@ -9,9 +9,9 @@
 module constants {
 
     //FONTS CONSTANTS ++++++++++++++++++++++++++++++++++++++++++
-    export var FONT_SIZE: string = "40px";
-    export var FONT_FAMILY: string = "Consolas";
-    export var FONT_COLOUR: string = "#FFFF00";
+    export var FONT_SIZE: string = "25px";
+    export var FONT_FAMILY: string = "Papyrus";
+    export var FONT_COLOUR: string = "#FFFFFF";
 
     // SCREEN CONSTANTS ++++++++++++++++++++++++++++++++++
     export var SCREEN_WIDTH: number = 640;

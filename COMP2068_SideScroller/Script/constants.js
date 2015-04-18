@@ -8,9 +8,9 @@
 var constants;
 (function (constants) {
     //FONTS CONSTANTS ++++++++++++++++++++++++++++++++++++++++++
-    constants.FONT_SIZE = "40px";
-    constants.FONT_FAMILY = "Consolas";
-    constants.FONT_COLOUR = "#FFFF00";
+    constants.FONT_SIZE = "25px";
+    constants.FONT_FAMILY = "Papyrus";
+    constants.FONT_COLOUR = "#FFFFFF";
     // SCREEN CONSTANTS ++++++++++++++++++++++++++++++++++
     constants.SCREEN_WIDTH = 640;
     constants.SCREEN_HEIGHT = 480;

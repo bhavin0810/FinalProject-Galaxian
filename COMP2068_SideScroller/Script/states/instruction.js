@@ -19,9 +19,17 @@ var states;
             // Add space to game
             this.space = new objects.Space();
             this.game.addChild(this.space);
+            var galaxian = new createjs.Bitmap(assetLoader.getResult("galaxianLogo"));
+            //Set the height and width of te GAME OBJECT           
+            //console.log(this.width.toString());
+            galaxian.regX = galaxian.getBounds().width * 0.5;
+            galaxian.regY = galaxian.getBounds().height * 0.5;
+            galaxian.x = constants.SCREEN_CENTER_WIDTH;
+            galaxian.y = 100;
+            this.game.addChild(galaxian);
             //Add game name to game
-            var gameInstruction = new objects.Label("GALAXIAN GAME \n\nPlay with Mouse\n\nCollect Coins to Get to the Next Level\n\nSave yourself from Enemies", constants.SCREEN_CENTER_WIDTH + 400, 100);
-            gameInstruction.font = "22px Consolas";
+            var gameInstruction = new objects.Label("GALAXIAN GAME \n\nPlay with Mouse\nCollect Coins to Get to the Next Level\nSave yourself from Enemies", constants.SCREEN_CENTER_WIDTH + 400, 270);
+            gameInstruction.font = "25px Papyrus";
             gameInstruction.regX = gameInstruction.getMeasuredWidth() * 0.5;
             gameInstruction.regY = gameInstruction.getMeasuredHeight() * 0.5;
             this.game.addChild(gameInstruction);

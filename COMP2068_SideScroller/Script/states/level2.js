@@ -27,8 +27,8 @@ var states;
             this.spaceShuttle = new objects.SpaceShuttle(this.game, stage);
             this.game.addChild(this.spaceShuttle);
             //Add game level to game
-            var levelLabel = new objects.Label("LEVEL 2", constants.SCREEN_CENTER_WIDTH, 400);
-            levelLabel.font = "40px Consolas";
+            var levelLabel = new objects.Label("LEVEL-2", constants.SCREEN_CENTER_WIDTH + 200, 10);
+            levelLabel.font = "25px Papyrus";
             levelLabel.regX = levelLabel.getMeasuredWidth() * 0.5;
             levelLabel.regY = levelLabel.getMeasuredHeight() * 0.5;
             this.game.addChild(levelLabel);
@@ -111,6 +111,10 @@ var states;
                 }
                 else {
                     collider.isColliding = false;
+                    if (this.spaceShuttle.bullet[i].x <= 0) {
+                        this.spaceShuttle.bullet[i].x = 10000;
+                        this.spaceShuttle.bullet[i].y = 10000;
+                    }
                 }
             }
         };

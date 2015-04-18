@@ -66,7 +66,7 @@ var instruction: states.Instruction;
 // asset manifest - array of asset objects
 var manifest = [
     { id: "spaceShuttle", src: "assets/images/spaceShuttle.jpg" },
-    { id: "space", src: "assets/images/space.jpg" },
+    { id: "space", src: "assets/images/space.png" },
     { id: "smallInsects", src: "assets/images/smallInsects.png" },
     { id: "bigInsects", src: "assets/images/bigInsects.png" },    
     { id: "coin", src: "assets/images/coin.gif" },    
@@ -75,6 +75,7 @@ var manifest = [
     { id: "backButton", src: "assets/images/backButton.png" },
     { id: "instructionButton", src: "assets/images/instructionsButton.png" },
     { id: "bullet", src: "assets/images/bullet.png" },
+    { id: "galaxianLogo", src: "assets/images/galaxian_logo.jpg" },    
     { id: "galaxian", src: "assets/audio/galaxian.mp3" },
     { id: "coinCollect", src: "assets/audio/coinCollect.wav" },
     { id: "thunder", src: "assets/audio/thunder.ogg" }

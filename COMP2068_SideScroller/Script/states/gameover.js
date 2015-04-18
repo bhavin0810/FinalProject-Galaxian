@@ -28,7 +28,7 @@ var states;
             this.game.addChild(this.space);
             //Add the Game Over Label
             var gameOverLabel = new objects.Label("GAME OVER", constants.SCREEN_CENTER_WIDTH, 100);
-            gameOverLabel.font = "60px Consolas";
+            gameOverLabel.font = "50px Papyrus";
             gameOverLabel.regX = gameOverLabel.getMeasuredWidth() * 0.5;
             gameOverLabel.regY = gameOverLabel.getMeasuredHeight() * 0.5;
             this.game.addChild(gameOverLabel);
